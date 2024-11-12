@@ -1,46 +1,140 @@
-<!--<!DOCTYPE html>
-<html>
-<body>
-<h1>Welcome to the Akbota's Page</h1>
-<p>Here some information about me ^^</p>
-</body>
-</html> -->
+<!--references: 
+used: fontawesome, https://www.youtube.com/watch?v=0YFrGy_mzjY&t=59s; https://www.dafont.com/recoleta.font
+future plan:
+1. changing the home page design, the picture is too big and how it is designed should be changed
+another idea will be to change the my picture overall which give too much of serious vibes
+2. seperate the pages!!!!
+3. add more pages liek portfolio
+4. in "About" page i will change the picture
+another problem is that when open in smaller devices the picture is not in the middle so i ahve to change it for the smaller devices
+5. "contact" section the form textarea's color looks weird so i would change it to the diff color;
+also the text color in textarea looks abit weird as well but i could change it thsi time i have to change in the future
+6. create a spreadsheet for the people who filled the form
+7. contact section needs more attention for the design
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Bota</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Personal Website</title>
+    <link rel ="stylesheet" href="styles.css">
+    <!-- Add Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Personal Webpage</h1>
-    </header>
-    <main>
-        <div class="container">
-            <div class="graphic-section">
-                <!-- Insert graphic or image here -->
-                <img src="images/your-image.jpg" alt="Profile Graphic">
+    <div id = "header">
+            <div class="container">
+                <img src="images/logo2.png" class="logo2">
+                <nav>
+                    <!--<img src="images/logo2.png" class="logo2"> -->
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                   <!-- <i class="fa-solid fa-bars" onclick="openmenu()"></i> -->
+                </nav>
+                </div>
+                <div class="main-picture">
+                    <img src="images/b3.png" alt="Main picture">
             </div>
-            <div class="info-section">
-                <h2>About Me</h2>
-                <p>Hello! I'm Akbota...</p>
-                <h3>Skills</h3>
-                <ul>
-                    <li>Java</li>
-                    <li>Web Development</li>
-                    <li>Data Structures & Algorithms</li>
-                </ul>
-                <h3>Projects</h3>
-                <p>Check out my projects on <a href="https://github.com/user-bota">GitHub</a>.</p>
+    </div>
+   <!-------------about ------------*-->
+    <div id="about">
+        <div class="row"> 
+            <div class="about-col-1">
+                <img src="images/aboutme.png" alt="idk">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="custom-font"> Detail-oriented and hardworking student with strong research skills and excellent verbal and written communication abilities. Interested in hands-on opportunities in AI, data science, and data analysis, as well as software and web development, to better understand the impact of technology on human life</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages</span><br>Java, Python, C#, Haskell, JavaScript, HTML, Scala</li>
+                        <li><span>Tools and Technologies</span><br>Google Docs, Asana, NXT Raiser's Edge, Excel, Word, PowerPoint, PaperPort, GitHub</li>
+                        <li><span>Softwares</span><br>Eclipse, Visual Studio Code, Citrix</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Student Assistant for AudioVisual Work</span><br>September 2024 - Present</li>
+                        <li><span>Student Assistant for Advancement Office</span><br>October 2023 - Present</li>
+                        <li><span>Student Assistant for Dean Of College</span><br>June 2024 - July 2024</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2027</span><br>Knox College</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </main>
-    <footer>
-        <p>© 2024 User Bota</p>
-    </footer>
-    <script src="scripts.js"></script>
+    </div>
+    <!-- -----------contact ------------ -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> aserikkyzy@knox.edu</p>
+                    <p><i class="fa-solid fa-phone"></i> 309 973 96 45</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100087925912612&mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/botaserikk/profilecard/?igsh=MXQ0cDdpdDl2Mzk3bA=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/akbota-serikkyzy-401957296"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <!-- cv part <a href="cs.link" class="'btn btn2">Download CV</a> -->
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>akbota<i class="fa-solid fa-wand-magic-sparkles"></i></p>
+        </div>
+     </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document .getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
 </body>
 </html>
 
