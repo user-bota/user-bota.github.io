@@ -21,27 +21,57 @@ body {
     display: flex;
     height: 100vh;
 }
+
 .container {
     width: 50%; 
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-}
-.logo2 {
-    width: 700px; /*logo size*/
-    margin-bottom: 10px; /* space between logo and nav items */
-}
-nav ul {
-    list-style-type: none;
     justify-content: center;
-    padding: 40px;
-    position: absolute;
+    height: 100vh;
+    position: relative;
+    padding-left: 50px;
 }
+
+#header .container {
+    padding-left: 120px;
+}
+
+.intro-text {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.intro-text p {
+    font-size: 20px;
+    color: #000; 
+    margin: 5px 0;
+    letter-spacing: 4px;
+}
+
+.intro-text h1 {
+    font-size: 72px; 
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: #000;
+    margin: 5px 0;
+}
+
+#header nav {
+    margin-bottom: 20px;
+}
+
+nav ul {
+  display: flex;
+  margin: 20px 0 0 -50px; /* in line with intro*/
+  list-style: none;
+  padding: 0;
+}
+
 nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 0px 70px;
+    margin: 0px 50px;
 }
 
 nav ul li a{
