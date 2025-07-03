@@ -22,7 +22,8 @@ also the text color in textarea looks abit weird as well but i could change it t
     <title>My Personal Website</title>
     <link rel ="stylesheet" href="styles.css">
     <!-- Add Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <script src="https://kit.fontawesome.com/1bd0ff5871.js" crossorigin="anonymous"></script>
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
 </head>
 <body>
     <div id = "header">
@@ -34,6 +35,8 @@ also the text color in textarea looks abit weird as well but i could change it t
                     <ul id="sidemenu">
                         <li><a href="#header">Home</a></li>
                         <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                     </ul>
@@ -41,7 +44,7 @@ also the text color in textarea looks abit weird as well but i could change it t
                 </nav>
                 </div>
                 <div class="main-picture">
-                    <img src="images/b3.PNG" alt="Main picture">
+                    <img src="images/mainpic_about.png" alt="Main picture"> 
             </div>
     </div>
    <!-------------about ------------*-->
@@ -87,8 +90,67 @@ also the text color in textarea looks abit weird as well but i could change it t
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2> Data Analysis</h2>
+                    <p> add description </p>
+                    <a href="#">Learn more</a>
+                </div>
                 
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2> Model Prediction </h2>
+                    <p> add description </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <!---
+                <div>
+                    <i class="fa-solid fa-face-smile"></i>
+                    <h2> Tbh idk yet</h2>
+                    <p> add description </p>
+                    <a href="#">Learn more</a>
+                </div> --->
             </div>
+        </div>
+    </div>
+
+    <!--------portfolio------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/flower-pic1.jpg" >
+                    <div class="layer">
+                        <h3> Social Media App</h3>
+                        <p> add description</p>
+                        <a href="#"> 
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/flower-pic2.jpg" >
+                    <div class="layer">
+                        <h3> Something 2</h3>
+                        <p> add description</p>
+                        <a href="#"> 
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <!---<div class="work">
+                    <img src="images/flower-pic3.jpg" >
+                    <div class="layer">
+                        <h3> Something 3</h3>
+                        <p> add description</p>
+                        <a href="#"> 
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>--->
+            </div>
+            <a href="#" class = "btn">See more</a>
         </div>
     </div>
 
