@@ -481,3 +481,10 @@ nav .fa-solid{
         font-size: 14px;
     }
 }
+
+#msg{
+    color: #81613e;
+    margin-top: -30px;
+    display: block;
+    text-align: center;
+}
