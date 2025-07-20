@@ -38,7 +38,7 @@ also the text color in textarea looks abit weird as well but i could change it t
                     <ul id="sidemenu">
                         <li><a href="#header">Home</a></li>
                         <li><a href="#about">About</a></li>
-                       <!-- <li><a href="#services">Services</a></li> --> 
+                       <!-- <li><a href="#services">Services</a></li> -->
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
@@ -58,7 +58,7 @@ also the text color in textarea looks abit weird as well but i could change it t
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p class="custom-font"> Detail-oriented student with strong skills in statistical analysis, predictive modeling, and clear data storytelling. Interested in applying data science to real-world data analysis and delivering insights for strategic decision-making.</p>
+                <p class="custom-font"> Detail-oriented and hardworking student with strong research skills and excellent verbal and written communication abilities. Interested in hands-on opportunities in AI, data science, and data analysis, as well as software and web development, to better understand the impact of technology on human life</p>
                 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -67,31 +67,28 @@ also the text color in textarea looks abit weird as well but i could change it t
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>Languages</span><br>Java, Python, R, HTML, CSS</li>
-                        <li><span>Tools and Technologies</span><br>Jupyter Notebooks, Google Docs, Asana, NXT Raiser's Edge, PaperPort, GitHub, MS Office, Google Sheets, LaTeX, RefLab</li>
-                        <li><span>Softwares</span><br> Eclipse, Visual Studio Code, Citrix, Cherwell, RStudio, Anaconda</li>
+                        <li><span>Languages</span><br>Java, Python, C#, Haskell, JavaScript, HTML, Scala</li>
+                        <li><span>Tools and Technologies</span><br>Google Docs, Asana, NXT Raiser's Edge, Excel, Word, PowerPoint, PaperPort, GitHub</li>
+                        <li><span>Softwares</span><br>Eclipse, Visual Studio Code, Citrix</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>Data Coordinator</span><br>October 2023 - Present<br>
-                            <small>Managed alumni records and performed 950+ data tasks to maintain accuracy in NXT Raiser's Edge.</small></li>
-                        <li>
-                            <span>Audiovisual Support</span><br>September 2024 - Present<br>
-                                <small>Provided tech support for campus events and faculty, ensuring smooth AV operations.</small>
-                        </li>
+                        <li><span>Student Assistant for AudioVisual Work</span><br>September 2024 - Present</li>
+                        <li><span>Student Assistant for Advancement Office</span><br>October 2023 - Present</li>
+                        <li><span>Student Assistant for Dean Of College</span><br>June 2024 - July 2024</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>2027</span><br>Bachelor's in Data Science, Knox College<br>GPA: 3.97/4.00</li>
+                        <li><span>2027</span><br>Knox College</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 
-    <!----------- services ----------------
+    <!----------- services ------------------>
     <div id="services">
         <div class="container">
             <h1 class="sub-title">My Services</h1>
@@ -116,9 +113,9 @@ also the text color in textarea looks abit weird as well but i could change it t
                     <p> add description </p>
                     <a href="#">Learn more</a>
                 </div> --->
-           <!--- </div>
+            </div>
         </div>
-    </div> -->
+    </div>
 
     <!--------portfolio------->
     <div id="portfolio">
@@ -128,9 +125,9 @@ also the text color in textarea looks abit weird as well but i could change it t
                 <div class="work">
                     <img src="images/flower-pic1.jpg" >
                     <div class="layer">
-                        <h3> Fake News Detection </h3>
-                        <p> A machine learning project to detect fake news using Python. This project demonstrates data cleaning, model training, and includes a full research paper explaining the results. </p>
-                        <a href="https://github.com/user-bota/fake-news-detection-project" target="_blank"> 
+                        <h3> Social Media App</h3>
+                        <p> add description</p>
+                        <a href="#"> 
                             <i class="fa-solid fa-up-right-from-square"></i>
                         </a>
                     </div>
@@ -181,7 +178,7 @@ also the text color in textarea looks abit weird as well but i could change it t
                     <!-- cv part <a href="cs.link" class="'btn btn2">Download CV</a> -->
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name = "submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
@@ -218,6 +215,17 @@ also the text color in textarea looks abit weird as well but i could change it t
     function closemenu(){
         sidemenu.style.right="-200px";
     }
+</script>
+<script>
+  const scriptURL = '<https://script.google.com/macros/s/AKfycbybNEGA92wT9IxJQyThBd-mUGDo_0FVSarqYy1R2VRXnuh5E5XbZyJ3gGLpqWaLz9mL/exec>'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
 </script>
 </body>
 </html>
