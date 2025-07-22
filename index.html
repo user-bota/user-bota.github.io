@@ -1,5 +1,5 @@
 <!--references: 
-used: fontawesome, https://www.youtube.com/watch?v=0YFrGy_mzjY&t=59s; https://www.dafont.com/recoleta.font
+used: fontawesome, https://www.youtube.com/watch?v=0YFrGy_mzjY&t=59s; https://www.dafont.com/recoleta.font; https://github.com/jamiewilson/form-to-google-sheets
 future plan:
 1. changing the home page design, the picture is too big and how it is designed should be changed
 another idea will be to change the my picture overall which give too much of serious vibes
@@ -7,10 +7,7 @@ another idea will be to change the my picture overall which give too much of ser
 3. add more pages liek portfolio
 4. in "About" page i will change the picture
 another problem is that when open in smaller devices the picture is not in the middle so i ahve to change it for the smaller devices
-5. "contact" section the form textarea's color looks weird so i would change it to the diff color;
-also the text color in textarea looks abit weird as well but i could change it thsi time i have to change in the future
-6. create a spreadsheet for the people who filled the form
-7. contact section needs more attention for the design
+
 -->
 
 <!DOCTYPE html>
@@ -58,7 +55,7 @@ also the text color in textarea looks abit weird as well but i could change it t
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p class="custom-font"> Detail-oriented and hardworking student with strong research skills and excellent verbal and written communication abilities. Interested in hands-on opportunities in AI, data science, and data analysis, as well as software and web development, to better understand the impact of technology on human life</p>
+                <p class="custom-font"> Detail-oriented student with strong skills in statistical analysis, predictive modeling, and clear data storytelling. Interested in applying data science to real-world data analysis and delivering insights for strategic decision-making./p>
                 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -67,21 +64,24 @@ also the text color in textarea looks abit weird as well but i could change it t
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>Languages</span><br>Java, Python, C#, Haskell, JavaScript, HTML, Scala</li>
-                        <li><span>Tools and Technologies</span><br>Google Docs, Asana, NXT Raiser's Edge, Excel, Word, PowerPoint, PaperPort, GitHub</li>
-                        <li><span>Softwares</span><br>Eclipse, Visual Studio Code, Citrix</li>
+                        <li><span>Languages</span><br>Java, Python, R, HTML, CSS</li>
+                        <li><span>Tools and Technologies</span><br>Jupyter Notebooks, Google Docs, Asana, NXT Raiser's Edge, PaperPort, GitHub, MS Office, Google Sheets, LaTeX, RefLab</li>
+                        <li><span>Softwares</span><br> Eclipse, Visual Studio Code, Citrix, Cherwell, RStudio, Anaconda</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>Student Assistant for AudioVisual Work</span><br>September 2024 - Present</li>
-                        <li><span>Student Assistant for Advancement Office</span><br>October 2023 - Present</li>
-                        <li><span>Student Assistant for Dean Of College</span><br>June 2024 - July 2024</li>
+                        <li><span>Data Coordinator</span><br>October 2023 - Present<br>
+                            <small>Managed alumni records and performed 950+ data tasks to maintain accuracy in NXT Raiser's Edge.</small></li>
+                        <li>
+                            <span>Audiovisual Support</span><br>September 2024 - Present<br>
+                                <small>Provided tech support for campus events and faculty, ensuring smooth AV operations.</small>
+                        </li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>2027</span><br>Knox College</li>
+                        <li><span>2027</span><br>Bachelor's in Data Science, Knox College<br>GPA: 3.97/4.00</li>
                     </ul>
                 </div>
             </div>
@@ -89,7 +89,7 @@ also the text color in textarea looks abit weird as well but i could change it t
     </div>
 
     <!----------- services ------------------>
-    <div id="services">
+   <!--- <div id="services">
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
@@ -106,16 +106,16 @@ also the text color in textarea looks abit weird as well but i could change it t
                     <p> add description </p>
                     <a href="#">Learn more</a>
                 </div>
-                <!---
+                
                 <div>
                     <i class="fa-solid fa-face-smile"></i>
                     <h2> Tbh idk yet</h2>
                     <p> add description </p>
                     <a href="#">Learn more</a>
-                </div> --->
+                </div> 
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!--------portfolio------->
     <div id="portfolio">
@@ -125,9 +125,9 @@ also the text color in textarea looks abit weird as well but i could change it t
                 <div class="work">
                     <img src="images/flower-pic1.jpg" >
                     <div class="layer">
-                        <h3> Social Media App</h3>
-                        <p> add description</p>
-                        <a href="#"> 
+                        <h3> Fake News Detection </h3>
+                        <p> A machine learning project to detect fake news using Python. This project demonstrates data cleaning, model training, and includes a full research paper explaining the results. </p>
+                        <a href="https://github.com/user-bota/fake-news-detection-project" target="_blank"> 
                             <i class="fa-solid fa-up-right-from-square"></i>
                         </a>
                     </div>
