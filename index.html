@@ -1,11 +1,6 @@
 <!--references: 
 used: fontawesome, https://www.youtube.com/watch?v=0YFrGy_mzjY&t=59s; https://www.dafont.com/recoleta.font; https://github.com/jamiewilson/form-to-google-sheets
 future plan:
-1. changing the home page design, the picture is too big and how it is designed should be changed
-another idea will be to change the my picture overall which give too much of serious vibes
-2. seperate the pages!!!!
-3. add more pages liek portfolio
-4. in "About" page i will change the picture
 another problem is that when open in smaller devices the picture is not in the middle so i ahve to change it for the smaller devices
 
 -->
@@ -25,10 +20,15 @@ another problem is that when open in smaller devices the picture is not in the m
 <body>
     <div id = "header">
             <div class="container">
-                <div class="intro-text">
-                    <p>Hi, I am </p>
-                    <h1>AKBOTA</h1>
-                    <p>let's get to know me a little better</p>
+                <div class="intro-row">
+                    <div class="intro-text">
+                        <p>Hi, I am </p>
+                        <h1>AKBOTA</h1>
+                        <p>let's get to know me a little better</p>
+                    </div>
+                    <div class="main-picture">
+                        <img src="images/mainpic_about.png" alt="Main picture"> 
+                    </div>
                 </div>
                 <nav>
                     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -43,9 +43,6 @@ another problem is that when open in smaller devices the picture is not in the m
                    <!-- <i class="fa-solid fa-bars" onclick="openmenu()"></i> -->
                 </nav>
                 </div>
-                <div class="main-picture">
-                    <img src="images/mainpic_about.png" alt="Main picture"> 
-            </div>
     </div>
    <!-------------about ------------*-->
     <div id="about">
@@ -64,7 +61,7 @@ another problem is that when open in smaller devices the picture is not in the m
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>Languages</span><br>Java, Python, R, HTML, CSS</li>
+                        <li><span>Languages</span><br>Java, Python, R, SQL, HTML, CSS</li>
                         <li><span>Tools and Technologies</span><br>Jupyter Notebooks, Google Docs, Asana, NXT Raiser's Edge, PaperPort, GitHub, MS Office, Google Sheets, LaTeX, RefLab</li>
                         <li><span>Softwares</span><br> Eclipse, Visual Studio Code, Citrix, Cherwell, RStudio, Anaconda</li>
                     </ul>
@@ -72,13 +69,20 @@ another problem is that when open in smaller devices the picture is not in the m
                 <div class="tab-contents" id="experience">
                     <ul>
                         <li><span>Data Analyst</span><br>May 2025 - Present<br>
-                            <small>Analyzed and visualized donor data using Python and Jupyter, uncovering trends to support Advancement strategy.</small></li>
+                            <!--- <small>Analyzed and visualized donor data using Python and Jupyter, uncovering trends to support Advancement strategy.</small></li> --->
+                            <ul> <small>
+                                <li> •&nbsp;&nbsp;&nbsp;&nbsp; Queried donor engagement data from Raiser’s Edge via Citrix and built Python workflows in Jupyter to clean, transform, and analyze large datasets, improving reporting speed and supporting data-driven decision-making.</li>
+                                <li> •&nbsp;&nbsp;&nbsp;&nbsp; Utilized Python (Pandas, Matplotlib) to analyze donor engagement data (events, volunteering, awards), uncovering behavioral insights that mirror customer segmentation and product analytics.</li>
+                                <li> •&nbsp;&nbsp;&nbsp;&nbsp; Designed visual dashboards (Matplotlib) to clearly communicate findings to senior leaders, enabling data-driven strategic decisions.</li>
+                                <li> •&nbsp;&nbsp;&nbsp;&nbsp; Communicated quantitative findings through strong written and verbal communication skills, translating statistical results into clear, business-friendly recommendations for leadership.</li>
+                                </small>
+                            </ul>
                         <li>
                         <li><span>Data Coordinator</span><br>October 2023 - Present<br>
-                            <small>Managed alumni records and performed 1000+ data tasks to maintain accuracy in NXT Raiser's Edge.</small></li>
+                            <small>•&nbsp;&nbsp;&nbsp;&nbsp; Managed alumni records and performed 1000+ data tasks to maintain accuracy in NXT Raiser's Edge.</small></li>
                         <li>
                             <span>Audiovisual Support</span><br>September 2024 - Present<br>
-                                <small>Provided tech support for campus events and faculty, ensuring smooth AV operations.</small>
+                                <small>•&nbsp;&nbsp;&nbsp;&nbsp; Provided tech support for campus events and faculty, ensuring smooth AV operations.</small>
                         </li>
                     </ul>
                 </div>
@@ -135,26 +139,26 @@ another problem is that when open in smaller devices the picture is not in the m
                         </a>
                     </div>
                 </div>
-                <!---<<div class="work">
-                    <img src="images/flower-pic2.jpg" >
+                <div class="work">
+                    <img src="images/data-mining.jpg" >
                     <div class="layer">
-                        <h3> Something 2</h3>
-                        <p> add description</p>
-                        <a href="#"> 
+                        <h3> Data Mining & Statistical Computing</h3>
+                        <p> Explored statistical and machine learning techniques in Python, including clustering, decision trees, dimensionality reduction, and outlier detection, with emphasis on data exploration and model evaluation. </p>
+                        <a href="https://github.com/user-bota/Data-Mining" target="_blank"> 
                             <i class="fa-solid fa-up-right-from-square"></i>
                         </a>
                     </div>
-                </div> -->
-                <!---<div class="work">
-                    <img src="images/flower-pic3.jpg" >
+                </div> 
+                <div class="work">
+                    <img src="images/applied-analytics.jpg" >
                     <div class="layer">
-                        <h3> Something 3</h3>
-                        <p> add description</p>
-                        <a href="#"> 
+                        <h3> Applied Analytics </h3>
+                        <p> Applied analytics project using R and Python to model real-world data from Excel through regression, time series forecasting, and classification, with full code and LaTeX reports. </p>
+                        <a href="https://github.com/user-bota/Applied-Analytics" target="_blank"> 
                             <i class="fa-solid fa-up-right-from-square"></i>
                         </a>
                     </div>
-                </div>--->
+                </div>
             </div>
             <a href="#" class = "btn">See more</a>
         </div>

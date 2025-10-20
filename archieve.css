@@ -1,0 +1,100 @@
+/*---------- css for small screens---------------*/
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    #header{
+        display: flex;
+        flex-direction: row; /* Align elements in a row */
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .container{
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo2{
+        width: 180px;
+        height: auto;
+        margin-left: 10px;
+    }
+   .main-picture img{
+        width: 170px;
+        height: auto;
+        margin-left: 10px;
+    }
+    nav {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        display: flex;
+    }
+    
+    .header-test{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    nav ul{
+        background: black;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        transition: right 0.3s ease;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-link{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+}
+
+#msg{
+    color: #81613e;
+    margin-top: -30px;
+    display: block;
+    text-align: center;
+} 
