@@ -409,10 +409,11 @@ nav ul li a:hover::after{
     transform: translateY(-5px);
 }
 /*cv part*/
-/*.btn.btn2{
+.btn.btn2{
     display: inline-block;
     background: #81613e;
-}*/
+}
+
 .contact-right form{
     width: 100%;
 }
@@ -549,7 +550,7 @@ nav .fa-solid {
     padding-left: 0;
     margin: 10px auto 0 auto;    /* centers the nav block itself */
     width: fit-content;          /* keeps it snug around the links */
-    transform: translateX(-28px); /* nudges it left */
+    transform: translateX(-30px); /* nudges it left */
     }
 
     nav ul li {
