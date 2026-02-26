@@ -35,15 +35,23 @@ body {
 }*/
 .container {
     padding: 10px;
-    display: flex;
-    flex-direction: column;     
-    align-items: center;      /* vertical centering */
-    justify-content: center;  /* optional: horizontal centering */
-    height: 100vh;            /* fills screen height so centering works */
     position: relative;
 }
 
+#portfolio .container,
+#contact .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
 #header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     padding-left: 100px;
 }
 
@@ -242,6 +250,42 @@ nav ul li a:hover::after{
     display: block;
 }
 
+#experience .experience-item {
+    margin: 0 0 18px;
+    padding: 0;
+}
+
+#experience .experience-role {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #81613e;
+}
+
+#experience .experience-date {
+    margin-top: 2px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    color: #5f4a31;
+}
+
+#experience .experience-points {
+    margin: 0;
+    padding-left: 16px;
+}
+
+#experience .experience-points li {
+    margin: 6px 0;
+    list-style: disc;
+    line-height: 1.45;
+}
+
+#experience .experience-summary {
+    margin: 0;
+    line-height: 1.45;
+}
+
 /* services */
 #services{
     padding: 30px 0;
@@ -414,6 +458,22 @@ nav ul li a:hover::after{
     background: #81613e;
 }
 
+.download-cv {
+    margin-top: 28px;
+    padding: 12px 26px;
+    border-radius: 8px;
+    border: 1px solid #81613e;
+    color: #F6F0E2;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.download-cv:hover {
+    background: #6f5334;
+    transform: translateY(-2px);
+}
+
 .contact-right form{
     width: 100%;
 }
@@ -441,6 +501,14 @@ form textarea::placeholder {
 .contact-right form button{
     color: black !important;
 }
+
+.contact-right form textarea {
+    min-height: 130px;
+    height: 130px !important;
+    resize: vertical;
+    line-height: 1.4;
+}
+
 form .btn2{
     padding: 14px 60px;
     font-size: 18px;
@@ -468,13 +536,22 @@ nav .fa-solid {
 
 /* ---------- Small screen layout (phones) ---------- */
 @media only screen and (max-width: 600px) {
-    /* Or target specific sections */
-    #about{
-        margin-bottom: 250px;
+    #about,
+    #portfolio,
+    #contact {
+        margin-bottom: 0;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
+    #about,
     #portfolio {
-        margin-bottom: 200px;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    #contact {
+        padding-top: 48px;
     }
 
     /* ----- Header container: stack image then text ----- */
@@ -486,7 +563,7 @@ nav .fa-solid {
     }
 
     /* ----- Container: holds intro-text and nav ----- */
-    .container {
+    #header .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -601,6 +678,38 @@ nav .fa-solid {
         font-size: 14px;
     }
 
+    #experience .experience-item {
+        text-align: left;
+        padding: 0 8px;
+        margin-bottom: 14px;
+    }
+
+    #experience .experience-summary,
+    #experience .experience-points {
+        padding-right: 4px;
+    }
+
+    #experience .experience-role {
+        font-size: 18px;
+    }
+
+    #experience .experience-date {
+        font-size: 13px;
+    }
+
+    .row {
+        row-gap: 32px;
+    }
+
+    .work-list {
+        margin-top: 28px;
+        grid-gap: 24px;
+    }
+
+    .contact-left p {
+        margin-top: 16px;
+    }
+
     .tab-link {
         font-size: 16px;
         margin-right: 20px;
@@ -608,6 +717,21 @@ nav .fa-solid {
 
     .contact-left, .contact-right {
         flex-basis: 100%;
+    }
+
+    .download-cv {
+        margin-top: 22px;
+    }
+
+    .contact-right form textarea {
+        min-height: 110px;
+        height: 110px !important;
+    }
+
+    #portfolio .container,
+    #contact .container {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .copyright {
