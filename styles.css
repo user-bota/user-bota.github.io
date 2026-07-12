@@ -1,7 +1,7 @@
 /*refferences: colorcodes.io; https://www.youtube.com/watch?v=0YFrGy_mzjY&t=59s; https://www.dafont.com/recoleta.font*/
-@font-face { 
-    font-family: 'Recoleta'; 
-    src: url('assets/Recoleta/Recoleta\ Regular.otf') format('opentype'); 
+@font-face {
+    font-family: 'Recoleta';
+    src: url('assets/Recoleta/Recoleta\ Regular.otf') format('opentype');
 }
 
 * {
@@ -24,7 +24,7 @@ body {
 }
 
 /*.container {
-    width: 50%; 
+    width: 50%;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -62,13 +62,13 @@ body {
 
 .intro-text p {
     font-size: 20px;
-    color: #000; 
+    color: #000;
     margin: 5px 0;
     letter-spacing: 4px;
 }
 
 .intro-text h1 {
-    font-size: 72px; 
+    font-size: 72px;
     font-weight: 500;
     letter-spacing: 4px;
     color: #000;
@@ -122,18 +122,18 @@ body {
   height: auto;
 }
 
-/*.main-picture { 
-    width: 50%; 
-    height: 100%; 
-    display: flex; 
-    justify-content: flex-end; 
-    align-items: center; 
-    padding: 20px 50px 20px 0; /* optional: adds spacing around the image 
+/*.main-picture {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 50px 20px 0; /* optional: adds spacing around the image
 }
 .main-picture img {
-    width: 550px; /* image is right half of the page 
-    height: auto; 
-    object-fit: contain; 
+    width: 550px; /* image is right half of the page
+    height: auto;
+    object-fit: contain;
 }*/
 
 nav {
@@ -142,7 +142,7 @@ nav {
     width: 100%;
     display: flex;
     justify-content: center;
-} 
+}
 
 nav ul {
   display: flex;
@@ -168,7 +168,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: black;
+    background: #81613e;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -177,6 +177,24 @@ nav ul li a::after{
 /*animation affect*/
 nav ul li a:hover::after{
     width: 100%;
+}
+
+.scroll-cue{
+    position: absolute;
+    left: 50%;
+    bottom: 32px;
+    transform: translateX(-50%);
+    color: #81613e;
+    font-size: 20px;
+    opacity: 0.6;
+    animation: scrollBounce 2s ease-in-out infinite;
+}
+.scroll-cue:hover{
+    opacity: 1;
+}
+@keyframes scrollBounce{
+    0%, 100% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, 10px); }
 }
 
 /* ---- about ---- */
@@ -200,6 +218,7 @@ nav ul li a:hover::after{
     max-width: 400px;
     height: auto;
     margin-left: 50px;
+    box-shadow: 0 12px 28px rgba(129, 97, 62, 0.2);
 }
 .about-col-2{
     flex-basis: 60%;
@@ -352,9 +371,17 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 8px 24px rgba(129, 97, 62, 0.14);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.work:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(129, 97, 62, 0.22);
 }
 .work img{
     width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -404,16 +431,17 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content ;
-    border: 1px solid #262626;
+    border: 1px solid #81613e;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #262626;
-    transition: background 0.5s;
+    color: #81613e;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 .btn:hover{
-    background: #ddb892;
-
+    background: #81613e;
+    color: #F6F0E2;
+    transform: translateY(-2px);
 }
 
 
@@ -478,28 +506,28 @@ nav ul li a:hover::after{
     width: 100%;
 }
 form input, form textarea{
-    color: #81613e;
+    color: #4a3a25;
     width: 100%;
-    border: 0;
+    border: 1px solid rgba(129, 97, 62, 0.25);
     outline: none;
-    background: #F6F0E2; 
+    background: #fff;
     padding: 15px;
     margin: 15px 0;
     font-size: 18px;
     border-radius: 6px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #81613e;
+    box-shadow: 0 0 0 3px rgba(129, 97, 62, 0.12);
 }
 
 /* for placeholder text in most browsers */
 form input::placeholder,
 form textarea::placeholder {
-    color: #81613e;
+    color: #a0876a;
     opacity: 1; /* full visibility */
-}
-
-.contact-right form input,
-.contact-right form textarea,
-.contact-right form button{
-    color: black !important;
 }
 
 .contact-right form textarea {
@@ -514,7 +542,8 @@ form .btn2{
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
-    color: #81613e;
+    color: #F6F0E2;
+    border: none;
 }
 .copyright{
     width: 100%;
@@ -523,10 +552,10 @@ form .btn2{
     background:#81613e;
     font-weight: 300;
     margin-top: 20px;
-    color:#d9c8a5;
+    color:#F6F0E2;
 }
 .copyright i{
-    color: #d9c8a5;
+    color: #F6F0E2;
 }
 
 /* ---------- Base: hide nav icons by default ---------- */
@@ -570,7 +599,7 @@ nav .fa-solid {
     justify-content: center;
     height: 100vh;
     }
-    
+
     .intro-row {
     display: flex;
     flex-direction: row;
@@ -618,7 +647,7 @@ nav .fa-solid {
     align-items: center;        /* centers content horizontally */
     text-align: center;         /* centers text inside elements */
     }
-    
+
     nav ul {
     display: flex;
     flex-wrap: wrap;             /* allows wrapping on small screens */
@@ -647,11 +676,11 @@ nav .fa-solid {
     .sub-title {
         font-size: 40px;
     }
-   
+
     .about-col-1 img{
         display: none;
     }
-    
+
     .about-content {
     display: flex;
     flex-direction: column;      /* stack them vertically */
@@ -704,6 +733,28 @@ nav .fa-solid {
     .work-list {
         margin-top: 28px;
         grid-gap: 24px;
+    }
+
+    /* Hover-to-reveal doesn't work on touch screens, so show project info
+       as a static caption below the image instead of an overlay. */
+    .work {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .work img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .work .layer {
+        position: static;
+        height: auto;
+        border-radius: 0 0 10px 10px;
+        padding: 20px;
+    }
+
+    .work:hover img {
+        transform: none;
     }
 
     .contact-left p {

@@ -1,4 +1,4 @@
-<!--references: 
+<!--references:
 used: fontawesome, https://www.youtube.com/watch?v=0YFrGy_mzjY&t=59s; https://www.dafont.com/recoleta.font; https://github.com/jamiewilson/form-to-google-sheets
 -->
 
@@ -8,7 +8,13 @@ used: fontawesome, https://www.youtube.com/watch?v=0YFrGy_mzjY&t=59s; https://ww
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Akbota Serikkyzy — Data Science Portfolio</title>
+    <meta name="description" content="Portfolio of Akbota Serikkyzy, a Data Science student at Knox College. Explore projects, experience, and skills in Python, SQL, and data storytelling.">
+    <meta property="og:title" content="Akbota Serikkyzy — Data Science Portfolio">
+    <meta property="og:description" content="Portfolio of Akbota Serikkyzy, a Data Science student at Knox College. Explore projects, experience, and skills in Python, SQL, and data storytelling.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/mainpic_about.png">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <link rel ="stylesheet" href="styles.css">
     <!-- Add Font Awesome -->
      <script src="https://kit.fontawesome.com/1bd0ff5871.js" crossorigin="anonymous"></script>
@@ -24,7 +30,7 @@ used: fontawesome, https://www.youtube.com/watch?v=0YFrGy_mzjY&t=59s; https://ww
                         <p>let's get to know me a little better</p>
                     </div>
                     <div class="main-picture">
-                        <img src="images/mainpic_about.png" alt="Main picture"> 
+                        <img src="images/mainpic_about.png" alt="Main picture">
                     </div>
                 </div>
                 <nav>
@@ -39,18 +45,21 @@ used: fontawesome, https://www.youtube.com/watch?v=0YFrGy_mzjY&t=59s; https://ww
                     </ul>
                    <!-- <i class="fa-solid fa-bars" onclick="openmenu()"></i> -->
                 </nav>
+                <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </a>
                 </div>
     </div>
    <!-------------about ------------*-->
     <div id="about">
-        <div class="row"> 
+        <div class="row">
             <div class="about-col-1">
                 <img src="images/about.jpg" alt="idk">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
                 <p class="custom-font"> Detail-oriented student with strong skills in statistical analysis, predictive modeling, and clear data storytelling. Interested in applying data science to real-world data analysis and delivering insights for strategic decision-making. </p>
-                
+
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -66,9 +75,22 @@ used: fontawesome, https://www.youtube.com/watch?v=0YFrGy_mzjY&t=59s; https://ww
                 <div class="tab-contents" id="experience">
                     <ul>
                         <li class="experience-item">
+                            <span class="experience-role">College Intern – Emory University</span>
+                            <p class="experience-date">June 2026 - August 2026</p>
+                            <ul class="experience-points">
+                                <li>Built a Python funder-faculty matching pipeline pairing 1,200+ faculty with 1,655 screened foundations using semantic embeddings.</li>
+                                <li>Engineered an IRS 990 data pipeline with a four-tier classification fallback to extract grant records for 600+ foundations.</li>
+                                <li>Analyzed 20,000+ multi-year giving records and developed a Power BI report to support funding analysis.</li>
+                            </ul>
+                        </li>
+                        <li class="experience-item">
                             <span class="experience-role">Data Analyst</span>
                             <p class="experience-date">May 2025 - Present</p>
-                            <p class="experience-summary">Supported data-driven fundraising and alums engagement strategy. Responsible for querying and cleaning donor data from Raiser’s Edge using Python and Jupyter, analyzing engagement patterns across events, volunteering, and awards, and building dashboards to inform leadership decisions. Collaborates with non-technical staff and faculty to translate complex analyses into clear, actionable insights that improve reporting efficiency and strategic planning.</p>
+                            <ul class="experience-points">
+                                <li>Cleaned and validated 20,000+ multi-year records in Python (Pandas), ensuring data integrity for revenue and trend reporting.</li>
+                                <li>Analyzed giving patterns across 19,000+ donor records to segment engagement tiers and flag year-over-year trends.</li>
+                                <li>Built KPI visualizations and translated findings into executive presentations for senior leadership.</li>
+                            </ul>
                         </li>
                         <li class="experience-item">
                             <span class="experience-role">Research Assistant</span>
@@ -79,11 +101,6 @@ used: fontawesome, https://www.youtube.com/watch?v=0YFrGy_mzjY&t=59s; https://ww
                             <span class="experience-role">Data Coordinator</span>
                             <p class="experience-date">October 2023 - Present</p>
                             <p class="experience-summary">Managed alumni records and performed 1000+ data tasks to maintain accuracy in NXT Raiser's Edge.</p>
-                        </li>
-                        <li class="experience-item">
-                            <span class="experience-role">Audiovisual Support</span>
-                            <p class="experience-date">September 2024 - Present</p>
-                            <p class="experience-summary">Provided tech support for campus events and faculty, ensuring smooth AV operations.</p>
                         </li>
                     </ul>
                 </div>
@@ -107,20 +124,20 @@ used: fontawesome, https://www.youtube.com/watch?v=0YFrGy_mzjY&t=59s; https://ww
                     <p> add description </p>
                     <a href="#">Learn more</a>
                 </div>
-                
+
                 <div>
                     <i class="fa-solid fa-crop-simple"></i>
                     <h2> Model Prediction </h2>
                     <p> add description </p>
                     <a href="#">Learn more</a>
                 </div>
-                
+
                 <div>
                     <i class="fa-solid fa-face-smile"></i>
                     <h2> Tbh idk yet</h2>
                     <p> add description </p>
                     <a href="#">Learn more</a>
-                </div> 
+                </div>
             </div>
         </div>
     </div> -->
@@ -135,27 +152,27 @@ used: fontawesome, https://www.youtube.com/watch?v=0YFrGy_mzjY&t=59s; https://ww
                     <div class="layer">
                         <h3> Fake News Detection </h3>
                         <p> A machine learning project to detect fake news using Python. This project demonstrates data cleaning, model training, and includes a full research paper explaining the results. </p>
-                        <a href="https://github.com/user-bota/fake-news-detection-project" target="_blank"> 
+                        <a href="https://github.com/user-bota/fake-news-detection-project" target="_blank">
                             <i class="fa-solid fa-up-right-from-square"></i>
                         </a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/emotionclassifier.png" >
+                    <img src="images/kazakhstan-gender-gap.jpg" >
                     <div class="layer">
-                        <h3> Emotion Classification with DistilBERT</h3>
-                        <p> Fine-tuned DistilBERT on the dair-ai/emotion dataset to classify text into six emotions (sadness, joy, love, anger, fear, surprise), and evaluated performance with accuracy, weighted F1, per-class metrics, and confusion matrix analysis. </p>
-                        <a href="https://github.com/user-bota/emotion-classification.git" target="_blank"> 
+                        <h3> Kazakhstan Gender Gap Analysis</h3>
+                        <p> A Tableau dashboard analyzing WEF Global Gender Gap Index data (2005–2023) to surface the divergence between education parity and political representation in Kazakhstan. </p>
+                        <a href="https://github.com/user-bota/kazakhstan-gender-gap-analysis" target="_blank">
                             <i class="fa-solid fa-up-right-from-square"></i>
                         </a>
                     </div>
-                </div> 
+                </div>
                 <div class="work">
                     <img src="images/bzbee.png" >
                     <div class="layer">
                         <h3> bzbee Chrome Extension </h3>
                         <p> An all-in-one productivity Chrome extension featuring a task list, focus timer with breaks, optional floating timer, website blocker, ambient sounds, and customizable characters/backgrounds to make studying more engaging and focused. </p>
-                        <a href="https://chromewebstore.google.com/detail/bzbee/mnobhlpgjflegmnoimkaikenmngbcjhh?utm_source=item-share-cb" target="_blank"> 
+                        <a href="https://chromewebstore.google.com/detail/bzbee/mnobhlpgjflegmnoimkaikenmngbcjhh?utm_source=item-share-cb" target="_blank">
                             <i class="fa-solid fa-up-right-from-square"></i>
                         </a>
                     </div>
@@ -164,11 +181,6 @@ used: fontawesome, https://www.youtube.com/watch?v=0YFrGy_mzjY&t=59s; https://ww
             <a href="https://github.com/user-bota" target="_blank" class = "btn">See more</a>
         </div>
     </div>
-
-
-
-
-
 
     <!-- -----------contact ------------ -->
      <div id="contact">
@@ -184,7 +196,7 @@ used: fontawesome, https://www.youtube.com/watch?v=0YFrGy_mzjY&t=59s; https://ww
                         <a href="https://www.linkedin.com/in/akbota-serikkyzy-401957296" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                     <!-- cv part -->
-                     <a href="https://drive.google.com/file/d/1O6B3W5avcGqHI3gBpVmDMucyGcBJeJn3/view?usp=sharing" target="_blank" class="btn btn2 download-cv">Download CV</a> 
+                     <a href="https://docs.google.com/document/d/1rMQB80KbZNfFx4VIjSrRNLRTLYl7b3O6f9KFaayQ_Yo/export?format=pdf" target="_blank" class="btn btn2 download-cv">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form name = "submit-to-google-sheet">
