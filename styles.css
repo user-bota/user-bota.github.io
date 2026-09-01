@@ -437,6 +437,12 @@ h1, h2, h3{
     font-weight: 500;
     color: var(--ink);
 }
+.experience-card .experience-org{
+    margin: 4px 0 0;
+    font-family: var(--sans);
+    font-size: 14px;
+    color: var(--ink-soft);
+}
 .experience-card .experience-date{
     margin: 6px 0 8px;
     font-family: var(--mono);
