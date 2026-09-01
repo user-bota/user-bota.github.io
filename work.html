@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work — Akbota Serikkyzy</title>
+    <meta name="description" content="Selected projects by Akbota Serikkyzy spanning machine learning, analytics, and dashboards.">
+    <meta property="og:title" content="Work — Akbota Serikkyzy">
+    <meta property="og:description" content="Selected projects spanning machine learning, analytics, and dashboards.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/website-aboutme.png">
+    <meta name="theme-color" content="#FFFFFF">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1bd0ff5871.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="site-header" id="siteHeader">
+        <div class="site-header-inner">
+            <a href="index.html" class="brand">akbota</a>
+            <button class="menu-btn" id="menuBtn" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation menu">
+                <span class="menu-btn-line"></span>
+                <span class="menu-btn-line"></span>
+            </button>
+            <nav class="site-nav" id="siteNav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="experience.html">Experience</a>
+                <a href="work.html" class="is-active">Work</a>
+                <a href="contact.html">Contact</a>
+                <a href="facts.html">?</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ============ Portfolio ============ -->
+        <section id="portfolio" class="portfolio section">
+            <div class="section-inner">
+                <div class="portfolio-head">
+                    <div>
+                        <p class="section-label reveal">03 — Selected Work</p>
+                        <h2 class="section-title reveal">My Work <span class="section-title-count">(8)</span></h2>
+                    </div>
+                    <p class="portfolio-note reveal">Things I've built, analyzed, broken, fixed, and learned from.</p>
+                </div>
+
+                <div class="work-filters reveal" role="group" aria-label="Filter projects by domain">
+                    <button type="button" class="work-filter is-active" data-filter="all">All</button>
+                    <button type="button" class="work-filter" data-filter="data-analysis">Data Analysis</button>
+                    <button type="button" class="work-filter" data-filter="machine-learning">Machine Learning</button>
+                    <button type="button" class="work-filter" data-filter="software">Software</button>
+                </div>
+
+                <ul class="work-list">
+                    <li class="work reveal" data-category="machine-learning">
+                        <a class="work-link" href="https://github.com/user-bota/fake-news-detection-project" target="_blank" rel="noopener">
+                            <div class="work-top">
+                                <span class="work-index">01</span>
+                                <span class="work-mark"><i class="fa-solid fa-newspaper" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="work-body">
+                                <h3 class="work-title">Fake News Detection</h3>
+                                <p class="work-desc">A machine learning project to detect fake news in Python, with data cleaning, model training, and a full research paper.</p>
+                                <ul class="work-tags"><li>Python</li><li>NLP</li><li>scikit-learn</li></ul>
+                                <span class="work-cta">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work reveal" data-category="data-analysis">
+                        <a class="work-link" href="https://github.com/user-bota/kazakhstan-gender-gap-analysis" target="_blank" rel="noopener">
+                            <div class="work-top">
+                                <span class="work-index">02</span>
+                                <span class="work-mark"><i class="fa-solid fa-venus-mars" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="work-body">
+                                <h3 class="work-title">Kazakhstan Gender Gap Analysis</h3>
+                                <p class="work-desc">A Tableau dashboard analyzing WEF Global Gender Gap Index data (2005–2023) to surface the divergence between education parity and political representation in Kazakhstan.</p>
+                                <ul class="work-tags"><li>Tableau</li><li>Data Viz</li></ul>
+                                <span class="work-cta">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work reveal" data-category="software">
+                        <a class="work-link" href="https://chromewebstore.google.com/detail/bzbee/mnobhlpgjflegmnoimkaikenmngbcjhh?utm_source=item-share-cb" target="_blank" rel="noopener">
+                            <div class="work-top">
+                                <span class="work-index">03</span>
+                                <span class="work-mark"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="work-body">
+                                <h3 class="work-title">bzbee Chrome Extension</h3>
+                                <p class="work-desc">An all-in-one productivity extension: task list, focus timer with breaks, website blocker, ambient sounds, and customizable characters to make studying more engaging.</p>
+                                <ul class="work-tags"><li>JavaScript</li><li>Chrome APIs</li></ul>
+                                <span class="work-cta">View in Chrome Store <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work reveal" data-category="data-analysis">
+                        <a class="work-link" href="https://github.com/user-bota/hospital-price-transparency" target="_blank" rel="noopener">
+                            <div class="work-top">
+                                <span class="work-index">04</span>
+                                <span class="work-mark"><i class="fa-solid fa-hospital" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="work-body">
+                                <h3 class="work-title">Hospital Price Transparency</h3>
+                                <p class="work-desc">Analyzed price-transparency files from 12 Dallas-Fort Worth hospitals to measure how much pricing is flat-dollar versus formula-based, and how that varies by health system.</p>
+                                <ul class="work-tags"><li>Python</li><li>Pandas</li></ul>
+                                <span class="work-cta">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work reveal" data-category="data-analysis">
+                        <a class="work-link" href="https://github.com/user-bota/transportation_ed" target="_blank" rel="noopener">
+                            <div class="work-top">
+                                <span class="work-index">05</span>
+                                <span class="work-mark"><i class="fa-solid fa-truck-medical" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="work-body">
+                                <h3 class="work-title">Transportation Barriers &amp; ED Dependence</h3>
+                                <p class="work-desc">An interactive Tableau dashboard analyzing how transportation barriers affect emergency department dependence and mortality across nearly 950,000 patients.</p>
+                                <ul class="work-tags"><li>Tableau</li></ul>
+                                <span class="work-cta">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work reveal" data-category="machine-learning">
+                        <a class="work-link" href="https://github.com/user-bota/emotion-classification" target="_blank" rel="noopener">
+                            <div class="work-top">
+                                <span class="work-index">06</span>
+                                <span class="work-mark"><i class="fa-solid fa-face-smile" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="work-body">
+                                <h3 class="work-title">Emotion Classification</h3>
+                                <p class="work-desc">Fine-tuned DistilBERT on the dair-ai/emotion dataset to classify text into six emotions, evaluated with accuracy, weighted F1, and a per-class confusion matrix.</p>
+                                <ul class="work-tags"><li>PyTorch</li><li>DistilBERT</li><li>NLP</li></ul>
+                                <span class="work-cta">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work reveal" data-category="machine-learning">
+                        <a class="work-link" href="https://github.com/user-bota/face-classifier" target="_blank" rel="noopener">
+                            <div class="work-top">
+                                <span class="work-index">07</span>
+                                <span class="work-mark"><i class="fa-solid fa-image-portrait" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="work-body">
+                                <h3 class="work-title">Face Classifier</h3>
+                                <p class="work-desc">Fine-tuned a ResNet18 model via transfer learning to classify whether an input face image is me or not me, with a Streamlit demo built on the trained checkpoint.</p>
+                                <ul class="work-tags"><li>PyTorch</li><li>ResNet18</li><li>Streamlit</li></ul>
+                                <span class="work-cta">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work reveal" data-category="machine-learning">
+                        <a class="work-link" href="https://github.com/user-bota/Time_Series_Forecasting_ARIMA_ETS_R" target="_blank" rel="noopener">
+                            <div class="work-top">
+                                <span class="work-index">08</span>
+                                <span class="work-mark"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="work-body">
+                                <h3 class="work-title">Time Series Forecasting: ARIMA &amp; ETS</h3>
+                                <p class="work-desc">Fit and compared ARIMA and ETS forecasting models in R across equity prices, commodity prices, and US GDP, selecting the best model via information criteria and out-of-sample error.</p>
+                                <ul class="work-tags"><li>R</li><li>ARIMA</li><li>ETS</li></ul>
+                                <span class="work-cta">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+                <a href="https://github.com/user-bota" target="_blank" rel="noopener" class="btn btn-outline reveal">See all projects on GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Akbota Serikkyzy</p>
+        <p>Designed &amp; built by Akbota</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

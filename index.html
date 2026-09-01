@@ -1,5 +1,5 @@
 <!--references:
-used: fontawesome, https://www.youtube.com/watch?v=0YFrGy_mzjY&t=59s; https://www.dafont.com/recoleta.font; https://github.com/jamiewilson/form-to-google-sheets
+used: fontawesome, Google Fonts (Fraunces, Space Grotesk, IBM Plex Mono), https://github.com/jamiewilson/form-to-google-sheets
 -->
 
 <!DOCTYPE html>
@@ -13,247 +13,125 @@ used: fontawesome, https://www.youtube.com/watch?v=0YFrGy_mzjY&t=59s; https://ww
     <meta property="og:title" content="Akbota Serikkyzy — Data Science Portfolio">
     <meta property="og:description" content="Portfolio of Akbota Serikkyzy, a Data Science student at Knox College. Explore projects, experience, and skills in Python, SQL, and data storytelling.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="images/mainpic_about.png">
+    <meta property="og:image" content="images/website-aboutme.png">
+    <meta name="theme-color" content="#FFFFFF">
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-    <link rel ="stylesheet" href="styles.css">
-    <!-- Add Font Awesome -->
-     <script src="https://kit.fontawesome.com/1bd0ff5871.js" crossorigin="anonymous"></script>
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1bd0ff5871.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id = "header">
-            <div class="container">
-                <div class="intro-row">
-                    <div class="intro-text">
-                        <p>Hi, I am </p>
-                        <h1>AKBOTA</h1>
-                        <p>let's get to know me a little better</p>
-                    </div>
-                    <div class="main-picture">
-                        <img src="images/mainpic_about.png" alt="Main picture">
-                    </div>
-                </div>
-                <nav>
-                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-                    <ul id="sidemenu">
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                       <!-- <li><a href="#services">Services</a></li> -->
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-                    </ul>
-                   <!-- <i class="fa-solid fa-bars" onclick="openmenu()"></i> -->
-                </nav>
-                <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                </a>
-                </div>
-    </div>
-   <!-------------about ------------*-->
-    <div id="about">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/about.jpg" alt="idk">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p class="custom-font"> Detail-oriented student with strong skills in statistical analysis, predictive modeling, and clear data storytelling. Interested in applying data science to real-world data analysis and delivering insights for strategic decision-making. </p>
 
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Languages</span><br>Java, Python, R, SQL, HTML, CSS</li>
-                        <li><span>Tools and Technologies</span><br>Jupyter Notebooks, Google Docs, Asana, NXT Raiser's Edge, PaperPort, GitHub, MS Office, Google Sheets, LaTeX, RefLab</li>
-                        <li><span>Softwares</span><br> Eclipse, Visual Studio Code, Citrix, Cherwell, RStudio, Anaconda</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li class="experience-item">
-                            <span class="experience-role">College Intern – Emory University</span>
-                            <p class="experience-date">June 2026 - August 2026</p>
-                            <ul class="experience-points">
-                                <li>Built a Python funder-faculty matching pipeline pairing 1,200+ faculty with 1,655 screened foundations using semantic embeddings.</li>
-                                <li>Engineered an IRS 990 data pipeline with a four-tier classification fallback to extract grant records for 600+ foundations.</li>
-                                <li>Analyzed 20,000+ multi-year giving records and developed a Power BI report to support funding analysis.</li>
-                            </ul>
-                        </li>
-                        <li class="experience-item">
-                            <span class="experience-role">Data Analyst</span>
-                            <p class="experience-date">May 2025 - Present</p>
-                            <ul class="experience-points">
-                                <li>Cleaned and validated 20,000+ multi-year records in Python (Pandas), ensuring data integrity for revenue and trend reporting.</li>
-                                <li>Analyzed giving patterns across 19,000+ donor records to segment engagement tiers and flag year-over-year trends.</li>
-                                <li>Built KPI visualizations and translated findings into executive presentations for senior leadership.</li>
-                            </ul>
-                        </li>
-                        <li class="experience-item">
-                            <span class="experience-role">Research Assistant</span>
-                            <p class="experience-date">September 2024 - December 2024</p>
-                            <p class="experience-summary">Assisted Professor David Bunde on supercomputer network topology research by evaluating random shortcut configurations in Java (Eclipse), identifying designs with 1–5% average-distance improvements and presenting results at the Horizons Student Symposium.</p>
-                        </li>
-                        <li class="experience-item">
-                            <span class="experience-role">Data Coordinator</span>
-                            <p class="experience-date">October 2023 - Present</p>
-                            <p class="experience-summary">Managed alumni records and performed 1000+ data tasks to maintain accuracy in NXT Raiser's Edge.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2027</span><br>Bachelor's in Data Science, Knox College<br>GPA: 3.92/4.00</li>
-                    </ul>
-                </div>
-            </div>
+    <header class="site-header" id="siteHeader">
+        <div class="site-header-inner">
+            <a href="index.html" class="brand">akbota</a>
+            <button class="menu-btn" id="menuBtn" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation menu">
+                <span class="menu-btn-line"></span>
+                <span class="menu-btn-line"></span>
+            </button>
+            <nav class="site-nav" id="siteNav" aria-label="Primary">
+                <a href="index.html" class="is-active">Home</a>
+                <a href="experience.html">Experience</a>
+                <a href="work.html">Work</a>
+                <a href="contact.html">Contact</a>
+                <a href="facts.html">?</a>
+            </nav>
         </div>
-    </div>
+    </header>
 
-    <!----------- services ------------------>
-   <!--- <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2> Data Analysis</h2>
-                    <p> add description </p>
-                    <a href="#">Learn more</a>
+    <main>
+        <!-- ============ About (merged Home) ============ -->
+        <section id="about" class="about section">
+            <div class="section-inner">
+                <p class="section-label reveal">01 — About</p>
+                <h1 class="page-heading reveal">About Me</h1>
+                <div class="about-layout">
+                <div class="about-left">
+                    <div class="about-media reveal">
+                        <img src="images/website-aboutme.png" alt="Akbota Serikkyzy">
+                    </div>
                 </div>
+                <div class="about-right">
+                    <div class="about-copy reveal">
+                        <p>I'm Akbota, a Data Science student who likes figuring out how things work, especially when there's a pile of messy data involved.</p>
+                        <p>I enjoy the mix of statistics, machine learning, and problem-solving that turns a vague question into something you can actually understand!</p>
+                    </div>
 
-                <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2> Model Prediction </h2>
-                    <p> add description </p>
-                    <a href="#">Learn more</a>
+                    <div class="tab-titles reveal">
+                        <p class="tab-links active-link" onclick="opentab(event, 'education')">Education</p>
+                        <p class="tab-links" onclick="opentab(event, 'skills')">Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab reveal" id="education">
+                        <h3 class="tab-heading">Education</h3>
+                        <ul class="tab-grid">
+                            <li><span>2027</span>Bachelor's in Data Science, Knox College</li>
+                            <li><span>GPA</span>3.93 / 4.00</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents reveal" id="skills">
+                        <h3 class="tab-heading">Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skills-group">
+                                <h4>Machine Learning &amp; AI</h4>
+                                <ul>
+                                    <li>PyTorch</li>
+                                    <li>scikit-learn</li>
+                                    <li>Transfer Learning (ResNet18)</li>
+                                    <li>DistilBERT</li>
+                                    <li>NLP</li>
+                                    <li>ARIMA &amp; ETS</li>
+                                    <li>Streamlit</li>
+                                </ul>
+                            </div>
+                            <div class="skills-group">
+                                <h4>Data &amp; Analytics</h4>
+                                <ul>
+                                    <li>Python (Pandas, NumPy, Matplotlib)</li>
+                                    <li>SQL</li>
+                                    <li>R</li>
+                                    <li>Excel</li>
+                                    <li>Power BI</li>
+                                    <li>Tableau</li>
+                                </ul>
+                            </div>
+                            <div class="skills-group">
+                                <h4>Programming</h4>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>SQL</li>
+                                    <li>R</li>
+                                    <li>Java</li>
+                                    <li>HTML/CSS</li>
+                                </ul>
+                            </div>
+                            <div class="skills-group">
+                                <h4>Tools</h4>
+                                <ul>
+                                    <li>Git/GitHub</li>
+                                    <li>Jupyter</li>
+                                    <li>VS Code</li>
+                                    <li>RStudio</li>
+                                    <li>Anaconda</li>
+                                    <li>LaTeX</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div>
-                    <i class="fa-solid fa-face-smile"></i>
-                    <h2> Tbh idk yet</h2>
-                    <p> add description </p>
-                    <a href="#">Learn more</a>
                 </div>
             </div>
-        </div>
-    </div> -->
+        </section>
+    </main>
 
-    <!--------portfolio------->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/fakenews.png" >
-                    <div class="layer">
-                        <h3> Fake News Detection </h3>
-                        <p> A machine learning project to detect fake news using Python. This project demonstrates data cleaning, model training, and includes a full research paper explaining the results. </p>
-                        <a href="https://github.com/user-bota/fake-news-detection-project" target="_blank">
-                            <i class="fa-solid fa-up-right-from-square"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/kazakhstan-gender-gap.jpg" >
-                    <div class="layer">
-                        <h3> Kazakhstan Gender Gap Analysis</h3>
-                        <p> A Tableau dashboard analyzing WEF Global Gender Gap Index data (2005–2023) to surface the divergence between education parity and political representation in Kazakhstan. </p>
-                        <a href="https://github.com/user-bota/kazakhstan-gender-gap-analysis" target="_blank">
-                            <i class="fa-solid fa-up-right-from-square"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/bzbee.png" >
-                    <div class="layer">
-                        <h3> bzbee Chrome Extension </h3>
-                        <p> An all-in-one productivity Chrome extension featuring a task list, focus timer with breaks, optional floating timer, website blocker, ambient sounds, and customizable characters/backgrounds to make studying more engaging and focused. </p>
-                        <a href="https://chromewebstore.google.com/detail/bzbee/mnobhlpgjflegmnoimkaikenmngbcjhh?utm_source=item-share-cb" target="_blank">
-                            <i class="fa-solid fa-up-right-from-square"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <a href="https://github.com/user-bota" target="_blank" class = "btn">See more</a>
-        </div>
-    </div>
+    <footer class="site-footer">
+        <p>© 2026 Akbota Serikkyzy</p>
+        <p>Designed &amp; built by Akbota</p>
+    </footer>
 
-    <!-- -----------contact ------------ -->
-     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i> aserikkyzy@knox.edu</p>
-                    <p><i class="fa-solid fa-phone"></i> 309 973 96 45</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/profile.php?id=100087925912612&mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/botaserikk/profilecard/?igsh=MXQ0cDdpdDl2Mzk3bA==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/akbota-serikkyzy-401957296" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <!-- cv part -->
-                     <a href="https://docs.google.com/document/d/1rMQB80KbZNfFx4VIjSrRNLRTLYl7b3O6f9KFaayQ_Yo/export?format=pdf" target="_blank" class="btn btn2 download-cv">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name = "submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg">  </span>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>akbota<i class="fa-solid fa-wand-magic-sparkles"></i></p>
-        </div>
-     </div>
-
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
-<script>
-    var sidemenu = document .getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right="0";
-    }
-    function closemenu(){
-        sidemenu.style.right="-200px";
-    }
-</script>
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbybNEGA92wT9IxJQyThBd-mUGDo_0FVSarqYy1R2VRXnuh5E5XbZyJ3gGLpqWaLz9mL/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {msg.innerHTML = "Message sent succesfully!"
-        setTimeout(function(){
-            msg.innerHTML = ""
-        }, 5000)
-        form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
+    <script src="scripts.js"></script>
 </body>
 </html>
